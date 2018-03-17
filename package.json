@@ -4,15 +4,25 @@
   "description": "lets play",
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "rm -rf dist && tscwatch build ./ ./dist/",
-    "build:watch": "tscwatch build ./ ./dist/",
-    "test": "npm run build && node node_modules/mocha/bin/mocha --exit --require dist/test/unit/bootstrap.js --recursive dist/test/unit"
+    "build": "rm -rf dist && tsc",
+    "build:watch": "",
+    "test": "npm run build && node node_modules/mocha/bin/mocha --exit --require dist/test/unit/bootstrap.js --recursive dist/test/unit",
+    "clear": "rm -rf node_modules package-lock.json dist"
   },
   "author": "eu",
   "license": "ISC",
   "devDependencies": {
+    "@types/koa": "^2.0.44",
+    "@types/koa-router": "^7.0.27",
+    "@types/lodash": "^4.14.105",
+    "koa": "^2.5.0",
+    "nodemon": "^1.17.2",
+    "ts-node": "^5.0.1",
     "typescript": "^2.7.2",
     "typings": "^2.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "koa-router": "^7.4.0",
+    "loadash": "^1.0.0"
+  }
 }

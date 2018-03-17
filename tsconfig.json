@@ -13,21 +13,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "types": [
-      "logger",
-      "mocha",
       "node",
-      "joi",
       "koa",
-      "koa-bodyparser",
-      "koa-helmet",
       "koa-router",
-      "lodash",
-      "knex",
-      "supertest"
+      "lodash"
     ],
   },
   "include": [
-    "./"
+    "./src"
   ],
   "exclude": [
     "./node_modules"
