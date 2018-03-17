@@ -6,11 +6,13 @@
   "scripts": {
     "build": "rm -rf dist && tscwatch build ./ ./dist/",
     "build:watch": "tscwatch build ./ ./dist/",
-    "test": "npm run build && node node_modules/mocha/bin/mocha --exit --require dist/test/unit/bootstrap.js --recursive dist/test/unit",
-    "clean": "rm -rf node_modules types package-lock.json"
+    "test": "npm run build && node node_modules/mocha/bin/mocha --exit --require dist/test/unit/bootstrap.js --recursive dist/test/unit"
   },
   "author": "eu",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^2.7.2",
+    "typings": "^2.1.1"
+  },
   "dependencies": {}
 }

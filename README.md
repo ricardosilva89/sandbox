@@ -1,12 +1,13 @@
 
 
--  setup the project with 
-    $ npm init
+X  setup the project with  $ npm init
 
-- setup git
+X setup git
+    git init
+    added .gitignore
 
-- add typescript
-   $ npm i @types/<module_name> -D
+X add typescript
+   npm i typescript -D
 
 - setup server with koa 
 
