@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+  mockserver-test-mock:
+    image: jamesdbloom/mockserver:mockserver-4.0.0
+    environment:
+      SERVICE_4444_NAME: mockserver-test-mock
+      SERVICE_EXPOSE_EXTERNAL_ADDRESS: 'true'
+    ports:
+      - "4444"
+    command: /opt/mockserver/run_mockserver.sh -logLevel TRACE -serverPort 4444
+    network_mode: bridge

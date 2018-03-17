@@ -1,0 +1,16 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "lets play",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tscwatch build ./ ./dist/",
+    "build:watch": "tscwatch build ./ ./dist/",
+    "test": "npm run build && node node_modules/mocha/bin/mocha --exit --require dist/test/unit/bootstrap.js --recursive dist/test/unit",
+    "clean": "rm -rf node_modules types package-lock.json"
+  },
+  "author": "eu",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}

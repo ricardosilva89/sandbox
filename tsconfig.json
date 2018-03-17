@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./types",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "types": [
+      "logger",
+      "mocha",
+      "node",
+      "joi",
+      "koa",
+      "koa-bodyparser",
+      "koa-helmet",
+      "koa-router",
+      "lodash",
+      "knex",
+      "supertest"
+    ],
+  },
+  "include": [
+    "./"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}
